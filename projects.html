@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projects</title>
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+	
+	<script type="text/javascript" src="js/projects.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+	
+</head>
+<body>
+	<header class="bg-primary" id="home">
+		<div class="d-flex top-nav align-items-center" id="customNavbar">
+
+			<div class="nav-brand">
+				<h5 class="lead m-0"><a class="text-white" href="https://ahsaan-habib.github.io/">Ahsan Habib's Profile</a></h5>
+			</div>
+
+			<div class="header-social ml-auto d-table align-items-center mr-4">
+				<div class="fixed-icon d-sm-none position-fixed"><i class="fas fa-comment-dots"></i></div>
+				<ul class="social-icons  d-flex flex-column flex-sm-row" id="social-icons-bar">
+					<li class="faicon phone position-relative">
+						<a class="javascript:void(0)"><i class="fas fa-phone"></i></a>
+						<div class="social-tooltip position-absolute">
+							<span></span>
+							<div class="stooltip-wrap lead p-3">
+								<h6 class="">Mobile No</h6>
+								<p class=""><a class="text-primary" href="callto: +8801774101024"> +8801774101024</a></p> 
+							</div>
+						</div>
+					</li>
+					<li class="faicon email">
+						<a href="mailto:ahice50@gmail.com" title="email"><i class="far fa-envelope"></i></a>
+					</li>
+					<li class="faicon facebook">
+						<a href="https://www.facebook.com/ahsan.habib.n" title="facebook"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="faicon twitter">
+						<a href="https://twitter.com/Ahsan_n_habib" title="twitter"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="faicon youtube">
+						<a href="https://www.youtube.com/channel/UCwJc2Xj1zsE8R3bJqVZnRuw" title="youtube"><i class="fab fa-youtube"></i></a>
+					</li>
+					<li class="faicon linkedin">
+						<a href="https://www.linkedin.com/in/ahsan-habib-56a904183" title="linkedin"><i class="fab fa-linkedin-in"></i></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="ml-auto my-1">
+				<ul class="menu nav justify-content-between d-none d-lg-flex mr-4">
+					 <li class="nav-item active">
+						<a class="nav-link" href="../index.html#home">Home <span class="sr-only">(current)</span></a>
+					 </li>
+					 <li class="nav-item">
+						<a class="nav-link" href="../index.html#about">About</a>
+					 </li>
+					 
+					 <li class="nav-item">
+						<a class="nav-link" href="../index.html#resume">Resume</a>
+					 </li>
+					 <li class="nav-item position-relative">
+						<a class="nav-link" href="https://ahsaan-habib.github.io/comingSoon.html">Designs</a>
+						<div class="dropdown top-dropdown position-absolute">
+							<div class="dropdown-item">
+								<a class="dropdown-link" href="#">Photoshop</a>
+							</div>
+							<div class="dropdown-item">
+								<a class="dropdown-link" href="#">Illustrator</a>
+							</div>
+							<div class="dropdown-item">
+								<a class="dropdown-link" href="#">Web Design</a>
+							</div>
+						</div>
+					 </li>
+					 <li class="nav-item position-relative">
+						<a class="nav-link" href="https://ahsaan-habib.github.io/projects.html">Projects</a>
+					   <div class="dropdown top-dropdown position-absolute">
+						   <div class="dropdown-item">
+							   <a class="dropdown-link" href="#">Javascript</a>
+						   </div>
+						   <div class="dropdown-item">
+							   <a class="dropdown-link" href="#">Django</a>
+						   </div>
+						   <div class="dropdown-item">
+							   <a class="dropdown-link" href="#">Angular</a>
+						   </div>
+					   </div>
+					</li>
+				</ul>
+
+				<div class="slicknav-main d-lg-none my-1">
+					<a class="slicknav-btn navbar-toggler ml-auto d-flex justify-content-end align-items-center collapsed"
+					 type="button" id="togglenav" data-toggle="collapse" data-target="#navbarSupportedContent" href="#">
+						<span class="navbar-fa-icon mr-2 lead text-white">Menu</span> 
+						<div  id="menu_icon" class="menu_icon_wrapper">
+							<div class="menu_icon"></div>
+						</div>
+					</a>
+					<div class="slicknav-nav collapse navbar-collapse pl-4" id="navbarSupportedContent">
+						<ul class="navbar-nav s-menu"> 
+							<li class="nav-item active">
+							<a class="nav-link" href="../index.html#home">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+							<a class="nav-link" href="../index.html#about">About</a>
+							</li>
+							
+							<li class="nav-item">
+							<a class="nav-link" href="../index.html#resume">Resume</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link d-flex pl-3" href="https://ahsaan-habib.github.io/comingSoon.html">Designs</a>
+								<span class="slicknav-arrow ml-auto text-white" role="button" data-toggle="collapse" data-target="#navbarDropdown"><i class="fa fa-angle-down px-3"></i></span>
+								<div class="collapse s-ddown" id="navbarDropdown">
+									<div class="dropdown-item">
+										<a class="dropdown-link" href="#">Photoshop</a>
+									</div>
+									<div class="dropdown-item">
+										<a class="dropdown-link" href="#">Illustrator</a>
+									</div>
+									<div class="dropdown-item">
+										<a class="dropdown-link" href="#">Web Design</a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link d-flex pl-3" href="https://ahsaan-habib.github.io/projects.html">Projects</a>
+								<span class="slicknav-arrow ml-auto text-white" role="button" data-toggle="collapse" data-target="#navbarDropdown2"><i class="fa fa-angle-down px-3"></i></span>
+								
+								<div class="collapse s-ddown" id="navbarDropdown2">
+									<div class="dropdown-item">
+										<a class="dropdown-link" href="#">Javascript</a>
+									</div>
+									<div class="dropdown-item">
+										<a class="dropdown-link" href="#">Django</a>
+									</div>
+									<div class="dropdown-item">
+										<a class="dropdown-link" href="#">Angular</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+    </header>
+
+    <div class="projects-section container-fluid">
+		<div class="content-block">
+			<h2 class="content-title text-center">Projects</h2>
+			<h6 class="content-subtitle text-center lead">My Recent Projects</h6>
+			<div class="content-description mt-4">
+
+                <div class="row" id="projects">
+
+					<!-- project no 1 -->
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4 dj-project" >
+
+						
+                        <div class="card  p-card h-100 border-0 mx-1" >
+                            <div class="p-img-wrapper mx-auto my-3 position-relative">
+                                <img class="" src="img/projects/QuizTestProjectss.png" width="100%" height="auto" alt="web support">
+								<div class="p-overlay-wrap">
+									<span class="p-overlay position-absolute"></span>
+									<div class="p-preview position-absolute d-flex align-items-center justify-content-center">
+										<a class="details-link btn-sm btn-primary text-white" data-toggle="modal" data-target="#exampleModal1">See Details <i class="fas fa-external-link-alt"></i></a>
+									</div>
+								</div>
+                            </div>
+                            <div class="card-body">
+								<small class="btn-sm dj-theme py-0 px-2 mb-2 d-table mr-auto">Django Project</small>
+                                <h5 class="card-title lead ">QuizApp With School Mangement System</h5>
+                            </div>
+                        </div>
+
+                    </div>
+
+					<!-- project no 2 -->
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4 js-project">
+                        <div class="card  p-card h-100 border-0 mx-1" >
+                            <div class="p-img-wrapper mx-auto my-3 position-relative">
+                                <img class="" src="img/projects/Weather.png" width="100%" height="auto" alt="web support">
+								<div class="p-overlay-wrap">
+									<span class="p-overlay position-absolute"></span>
+									<div class="p-preview position-absolute d-flex align-items-center justify-content-center">
+										<a class="details-link btn-sm btn-primary text-white" data-toggle="modal" data-target="#exampleModal2">See Details <i class="fas fa-external-link-alt"></i></a>
+									</div>
+								</div>
+                            </div>
+                            <div class="card-body">
+								<small class="btn-sm js-theme py-0 px-2 mb-2 d-table mr-auto">Javascript Project</small>
+                                <h5 class="card-title lead ">Live Weather(API) App</h5>
+                            </div>
+                        </div>
+                    </div>
+
+					<!-- project no 3 -->
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4 dj-project">
+                        <div class="card  p-card h-100 border-0 mx-1" >
+                            <div class="p-img-wrapper mx-auto my-3 position-relative">
+                                <img class="" src="img/projects/Auction.png" width="100%" height="auto" alt="web support">
+								<div class="p-overlay-wrap">
+									<span class="p-overlay position-absolute"></span>
+									<div class="p-preview position-absolute d-flex align-items-center justify-content-center">
+										<a class="details-link btn-sm btn-primary text-white" data-toggle="modal" data-target="#exampleModal3">See Details <i class="fas fa-external-link-alt"></i></a>
+									</div>
+								</div>
+                            </div>
+                            <div class="card-body">
+								<small class="btn-sm dj-theme py-0 px-2 mb-2 d-table mr-auto">Django Project</small>
+                                <h5 class="card-title lead">Auction E-Commerce Website</h5>
+                            </div>
+                        </div>
+                    </div>
+
+					<!-- project no 4 -->
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4 js-project">
+                        <div class="card  p-card h-100 border-0 mx-1" >
+                            <div class="p-img-wrapper mx-auto my-3 position-relative">
+                                <img class="" src="img/projects/todoApp.png" width="100%" height="auto" alt="web support">
+								<div class="p-overlay-wrap">
+									<span class="p-overlay position-absolute"></span>
+									<div class="p-preview position-absolute d-flex align-items-center justify-content-center">
+										<a class="details-link btn-sm btn-primary text-white" data-toggle="modal" data-target="#exampleModal4">See Details <i class="fas fa-external-link-alt"></i></a>
+									</div>
+								</div>
+                            </div>
+                            <div class="card-body">
+								<small class="btn-sm js-theme py-0 px-2 mb-2 d-table mr-auto">Javascript Project</small>
+                                <h5 class="card-title lead">ToDo App(Extended Version)</h5>
+                            </div>
+                        </div>
+                    </div>
+
+					<!-- project no 5 -->
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4 dj-project">
+                        <div class="card  p-card h-100 border-0 mx-1" >
+                            <div class="p-img-wrapper mx-auto my-3 position-relative">
+                                <img class="" src="img/projects/mail.png" width="100%" height="auto" alt="web support">
+								<div class="p-overlay-wrap">
+									<span class="p-overlay position-absolute"></span>
+									<div class="p-preview position-absolute d-flex align-items-center justify-content-center">
+										<a class="details-link btn-sm btn-primary text-white" data-toggle="modal" data-target="#exampleModal5">See Details <i class="fas fa-external-link-alt"></i></a>
+									</div>
+								</div>
+                            </div>
+                            <div class="card-body">
+								<small class="btn-sm dj-theme py-0 px-2 mb-2 d-table mr-auto">Django Project</small>
+                                <h5 class="card-title lead ">MailApp API Based Website</h5>
+                            </div>
+                        </div>
+                    </div>
+					
+					<!-- project no 6 -->
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4 ang-project">
+                        <div class="card  p-card h-100 border-0 mx-1" >
+                            <div class="p-img-wrapper mx-auto my-3 position-relative">
+                                <img class="" src="img/projects/ABAssignment.png" width="100%" height="auto" alt="web support">
+								<div class="p-overlay-wrap">
+									<span class="p-overlay position-absolute"></span>
+									<div class="p-preview position-absolute d-flex align-items-center justify-content-center">
+										<a class="details-link btn-sm btn-primary text-white" data-toggle="modal" data-target="#exampleModal6">See Details <i class="fas fa-external-link-alt"></i></a>
+									</div>
+								</div>
+                            </div>
+                            <div class="card-body">
+								<small class="btn-sm ang-theme py-0 px-2 mb-2 d-table mr-auto">Angular Project</small>
+                                <h5 class="card-title lead ">Live Assignment based Project</h5>
+                            </div>
+                        </div>
+                    </div>
+
+					<!-- project no 7 -->
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4 dj-project">
+                        <div class="card  p-card h-100 border-0 mx-1" >
+                            <div class="p-img-wrapper mx-auto my-3 position-relative">
+                                <img class="" src="img/projects/network.png" width="100%" height="auto" alt="web support">
+								<div class="p-overlay-wrap">
+									<span class="p-overlay position-absolute"></span>
+									<div class="p-preview position-absolute d-flex align-items-center justify-content-center">
+										<a class="details-link btn-sm btn-primary text-white" data-toggle="modal" data-target="#exampleModal7">See Details <i class="fas fa-external-link-alt"></i></a>
+									</div>
+								</div>
+                            </div>
+                            <div class="card-body">
+								<small class="btn-sm dj-theme py-0 px-2 mb-2 d-table mr-auto">Django Project</small>
+                                <h5 class="card-title lead ">Social Network Project with (twitter-like Website)</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+				<!-- Modal project no 1 -->
+				<div class="modal fade my-auto" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header py-1">
+								<h5 class="modal-title lead" id="exampleModalLabel1">QuizApp With School Mangement System</h5>
+								<button type="button" class="close modal-close-btn" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body ">
+								<div class="card border-0" >
+									<div class="modal-img">
+										<img class="card-img p-2" src="img/projects/test.gif" width="100%" height="auto" alt="web support">
+									</div>
+									<div class="card-body m-card-body">
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Project Name: <h5 class="card-title d-inline text-dark lead mb-0">QuizApp With School Mangement System</h5></span>
+										</div>
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Project Type:</span>
+											<small class="btn-sm dj-theme ml-1 px-2 py-0 d-table mr-auto">Django Project</small>
+										</div>
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Used Languages:</span>
+											<small class="btn-sm js-theme  px-2 py-0 d-table mx-1">Javascript</small>
+											<small class="btn-sm py-theme  px-2 py-0 d-table mx-1">Python</small>
+											<small class="btn-sm html-theme  px-2 py-0 d-table mx-1">HTML</small>
+											<small class="btn-sm css-theme  px-2 py-0 d-table mx-1">CSS</small>
+										</div>
+										<div class="content-description mt-4">
+											
+											<p class="container">This project is based on django framework. 
+												This app have following features:
+												<ul class="project-feature">
+													<li>Any user will be able to give specific quiz Test as a student.</li>
+													<li>Any teacher will be able to create questions on specific subject.</li>
+													<li>User must login as a Teacher if want to create question</li>
+													<li>Teacher's profile dashboard display every statistics about his subjects</li>
+													<li>Student will be able to know their result and ranks in particular subject</li>
+													<li>Admin Reserved all Rights to change anything</li>
+
+												</ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer py-1">
+								<button type="button" class="btn btn-info mr-auto modal-close" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal project no 2 -->
+				<div class="modal fade my-auto" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header py-1">
+								<h5 class="modal-title lead" id="exampleModalLabel2">Live Weather(API) App</h5>
+								<button type="button" class="close modal-close-btn" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body ">
+								<div class="card border-0" >
+									<div class="modal-img">
+										<img class="card-img p-2" src="img/projects/weather.gif" width="100%" height="auto" alt="web support">
+									</div>
+									<div class="card-body m-card-body">
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Project Name: <h5 class="card-title d-inline text-dark lead mb-0">Live Weather(API) App</h5></span>
+										</div>
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Project Type:</span>
+											<small class="btn-sm js-theme ml-1 px-2 py-0 d-table mr-auto">Javascript Project</small>
+										</div>
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Used Languages:</span>
+											<small class="btn-sm js-theme  px-2 py-0 d-table mx-1">Javascript</small>
+											<small class="btn-sm html-theme  px-2 py-0 d-table mx-1">HTML</small>
+											<small class="btn-sm css-theme  px-2 py-0 d-table mx-1">CSS</small>
+										</div>
+										<div class="content-description mt-4">
+											
+											<p class="container">This project is based on Javascript. This app have following features:
+												<ul class="project-feature">
+													<li>User will be able to know Live weather information of any city in the world.</li>
+													<li>Best UX design let know the user day and night information for the seached city.</li>
+													<li>This app will remember user last searched city.</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer py-1">
+								<button type="button" class="btn btn-info mr-auto modal-close" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal project no 3 -->
+				<div class="modal fade my-auto" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header py-1">
+								<h5 class="modal-title lead" id="exampleModalLabel3">Auction E-Commerce Website</h5>
+								<button type="button" class="close modal-close-btn" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body ">
+								<div class="card border-0" >
+									<div class="modal-img">
+										<img class="card-img p-2" src="img/projects/auction.gif" width="100%" height="auto" alt="web support">
+									</div>
+									<div class="card-body m-card-body">
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Project Name: <h5 class="card-title d-inline text-dark lead mb-0">Auction E-Commerce Website</h5></span>
+										</div>
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Project Type:</span>
+											<small class="btn-sm dj-theme ml-1 px-2 py-0 d-table mr-auto">Django Project</small>
+										</div>
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Used Languages:</span>
+											<small class="btn-sm js-theme  px-2 py-0 d-table mx-2">Javascript</small>
+											<small class="btn-sm py-theme  px-2 py-0 d-table mx-2">Python</small>
+											<small class="btn-sm html-theme px-2 py-0 d-table mx-2">HTML</small>
+											<small class="btn-sm css-theme  px-2 py-0 d-table mx-2">CSS</small>
+										</div>
+										<div class="content-description mt-4">
+											
+											<p class="container">This project is based on django framework. This is a Project from CS50 Web Programming.
+												 This app have following features: 
+												 <ul class="project-feature">
+													 <li>Users will be able to visit a page to create a new product Infomation.</li>
+													 <li>Other user will be able to bid on this product.</li>
+													 <li>Users will be able to comment in product page.</li>
+													 <li>Users also will be able to add any product in watchlist.</li>
+													 <li>Owner of product will be able to close the aution when satisfied on bidding.</li>
+													 <li>After closing any product winner will get the notified page.</li>
+												 </ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer py-1">
+								<button type="button" class="btn btn-info mr-auto modal-close" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal project no 4 -->
+				<div class="modal fade my-auto" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header py-1">
+								<h5 class="modal-title lead" id="exampleModalLabel4">ToDo App(Extended Version)</h5>
+								<button type="button" class="close modal-close-btn" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body ">
+								<div class="card border-0" >
+									<div class="modal-img">
+										<img class="card-img p-2" src="img/projects/todo.gif" width="100%" height="auto" alt="web support">
+									</div>
+									<div class="card-body m-card-body">
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Project Name: <h5 class="card-title d-inline text-dark lead mb-0">ToDo App(Extended Version)</h5></span>
+										</div>
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Project Type:</span>
+											<small class="btn-sm js-theme ml-1 px-2 py-0 d-table mr-auto">Javascript Project</small>
+										</div>
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Used Languages:</span>
+											<small class="btn-sm js-theme px-2 py-0 d-table mx-2">Javascript</small>
+											<small class="btn-sm html-theme  px-2 py-0 d-table mx-2">HTML</small>
+											<small class="btn-sm css-theme  px-2 py-0 d-table mx-2">CSS</small>
+										</div>
+										<div class="content-description mt-4">
+											
+											<p class="container">This project is based on javascript framework.
+												 This app have following features:
+												 <ul class="project-feature">
+													 <li>User will be able to store his/her todos in simple way.</li>
+													 <li>User will be able to strike through in entry if it already done</li>
+													 <li>User also will be able to delete any task anytime</li>
+													 <li>Very efficient searching task feature also added</li>
+												 </ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer py-1">
+								<button type="button" class="btn btn-info mr-auto modal-close" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal project no 5 -->
+				<div class="modal fade my-auto" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header py-1">
+								<h5 class="modal-title lead" id="exampleModalLabel5">MailApp API Based Website</h5>
+								<button type="button" class="close modal-close-btn" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body ">
+								<div class="card border-0" >
+									<div class="modal-img">
+										<img class="card-img p-2" src="img/projects/mail.gif" width="100%" height="auto" alt="web support">
+									</div>
+									<div class="card-body m-card-body">
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Project Name: <h5 class="card-title d-inline text-dark lead mb-0">MailApp API Based Website</h5></span>
+										</div>
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Project Type:</span>
+											<small class="btn-sm dj-theme ml-1 px-2 py-0 d-table mr-auto">Django Project</small>
+										</div>
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Used Languages:</span>
+											<small class="btn-sm js-theme px-2 py-0 d-table mx-2">Javascript</small>
+											<small class="btn-sm py-theme px-2 py-0 d-table mx-2">Python</small>
+											<small class="btn-sm html-theme px-2 py-0 d-table mx-2">HTML</small>
+											<small class="btn-sm css-theme px-2 py-0 d-table mx-2">CSS</small>
+										</div>
+										<div class="content-description mt-4">
+											
+											<p class="container">This project is based on django framework. This is a CS50 Web Project
+												where API feature created with Django and other feature is written with javascript.
+												 This app have following features: 
+												 <ul class="project-feature">
+													 <li>User will be able to send anyone(multi) email.</li>
+													 <li>User will be able to read inboxed email.</li>
+													 <li>Reading email will be different from unreading email.</li>
+													 <li>User will be able to archived any email.</li>
+													 <li>User will be also able to send reply email to sender.</li>
+												 </ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer py-1">
+								<button type="button" class="btn btn-info mr-auto modal-close" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal project no 6 -->
+				<div class="modal fade my-auto" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header py-1">
+								<h5 class="modal-title lead" id="exampleModalLabel6">Live Assignment based Project</h5>
+								<button type="button" class="close modal-close-btn" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body ">
+								<div class="card border-0" >
+									<div class="modal-img">
+										<img class="card-img p-2" src="img/projects/ABAssignment.png" width="100%" height="auto" alt="web support">
+									</div>
+									<div class="card-body m-card-body">
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Project Name: <h5 class="card-title d-inline text-dark lead mb-0">Live Assignment based Project</h5></span>
+										</div>
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Project Type:</span>
+											<small class="btn-sm ang-theme ml-1 px-2 py-0 d-table mr-auto">Angular Project</small>
+										</div>
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Used Languages:</span>
+											<small class="btn-sm js-theme  px-2 py-0 d-table mx-2">Javascript</small>
+											<small class="btn-sm py-theme  px-2 py-0 d-table mx-2">Typescript</small>
+											<small class="btn-sm html-theme  px-2 py-0 d-table mx-2">HTML</small>
+											<small class="btn-sm css-theme  px-2 py-0 d-table mx-2">CSS</small>
+										</div>
+										<div class="content-description mt-4">
+											<a class="modal-close btn text-white" href="https://ahsaan-habib.github.io/ABAssignment04/#/district">See Live Version</a>
+											<p class="container">This project is based on Angular framework. 
+												This app have following features: 
+												<ul class="project-feature">
+													<li>This is learning project during Angular training.</li>
+													<li>You can visit the project now via following link
+														<a class="" href="https://ahsaan-habib.github.io/ABAssignment04/#/district">visit the project now.</a> </li>
+												</ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer py-1">
+								<button type="button" class="btn btn-info mr-auto modal-close" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal project no 7 -->
+				<div class="modal fade my-auto" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+					<div class="modal-dialog modal-lg" role="document">
+						<div class="modal-content">
+							<div class="modal-header py-1">
+								<h5 class="modal-title lead" id="exampleModalLabel7">Social Network Project with (twitter-like Website)</h5>
+								<button type="button" class="close modal-close-btn" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body ">
+								<div class="card border-0" >
+									<div class="modal-img">
+										<img class="card-img p-2" src="img/projects/network.png" width="100%" height="auto" alt="web support">
+									</div>
+									<div class="card-body m-card-body">
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Project Name: <h5 class="card-title d-inline text-dark lead mb-0">Social Network Project with (twitter-like Website)</h5></span>
+										</div>
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Project Type:</span>
+											<small class="btn-sm dj-theme ml-1 px-2 py-0 d-table mr-auto">Django Project</small>
+										</div>
+										<div class="single-info d-flex flex-wrap align-items-center">
+											<span>Used Languages:</span>
+											<small class="btn-sm js-theme px-2 py-0 d-table mx-2">Javascript</small>
+											<small class="btn-sm py-theme px-2 py-0 d-table mx-2">Python</small>
+											<small class="btn-sm html-theme px-2 py-0 d-table mx-2">HTML</small>
+											<small class="btn-sm css-theme px-2 py-0 d-table mx-2">CSS</small>
+										</div>
+										<div class="content-description mt-4">
+											
+											<p class="container">This project is based on django framework. This is CS50 Web project.
+												 This app have following features: 
+												 <ul class="project-feature">
+													 <li>User will be able to create his/her own profile.</li>
+													 <li>User will be able to follow others and like comment their post.</li>
+													 <li>User also will be able to create post and update his own post anytime.</li>
+												 </ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal-footer py-1">
+								<button type="button" class="btn btn-info mr-auto modal-close" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+            </div>
+        </div>
+    </div>
+	
+    
+</body>
+</html>
