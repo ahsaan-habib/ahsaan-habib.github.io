@@ -970,6 +970,10 @@ div.h-content-wrapper div {
     /* margin-left: -40% !important; */
     background: linear-gradient(45deg, #5239f7, #3491fd);
   }
+  .h-front {
+    display: none;
+    visibility: hidden;
+  }
 
   .h-back {
     top: -24px;
