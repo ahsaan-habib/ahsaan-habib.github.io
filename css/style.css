@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+li {
+  list-style-type: square;
+}
 .heading_bg {
   background-image: url(../img/primaryedit.svg);
   background-position-x: center;
@@ -50,6 +53,7 @@ html {
   transform-origin: top center;
 }
 .menu li.nav-item {
+  list-style-type: none;
   justify-content: space-between;
   margin: 0 5px;
   padding-top: 25px;
@@ -140,6 +144,7 @@ html {
 .top-dropdown .dropdown-item:hover a.dropdown-link {
   background: linear-gradient(45deg, #369cff, #664dd9);
 }
+
 @keyframes swipeLeftMain {
   0% {
     opacity: 0;
@@ -183,8 +188,44 @@ html {
     transform: scaleY(1);
   }
 }
+@keyframes glow {
+  0% {
+    color: violet;
+  }
+  5% {
+    color: indigo;
+  }
+  10% {
+    color: blue;
+  }
+  15% {
+    color: green;
+  }
+  20% {
+    color: yellow;
+  }
+  25% {
+    color: orange;
+  }
+  30% {
+    color: red;
+  }
+  35% {
+    color: rgb(255, 212, 188);
+  }
+  40% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
 
 /* End of menu style*/
+
+.glow-link {
+  animation: glow 3s ease infinite;
+}
 
 .effect_art {
   position: relative;
@@ -863,6 +904,7 @@ div.h-content-wrapper div {
     z-index: 100;
   }
   .s-menu .nav-item {
+    list-style-type: none;
     justify-content: space-between;
     padding-top: 20px;
     transform-origin: left center;
